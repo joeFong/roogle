@@ -1,3 +1,4 @@
+import Footer from '@/components/footer'
 import './globals.css'
 
 export default function RootLayout({
@@ -13,7 +14,12 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        {children}
+        <main className='h-screen flex flex-col'>
+          <div className='content grow'>
+            {children}
+          </div>
+          <Footer/>
+        </main>
       </body>
     </html>
   )
