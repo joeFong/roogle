@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 
 export default function List(props: any) {
-    const items = [1, 2, 3]
     return (
         <div className="container mx-auto flex flex-col">
             <p className="font-light text-slate-500">About 4,590,000,000 results (0.44 seconds) </p>
