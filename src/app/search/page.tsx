@@ -1,13 +1,10 @@
 import Navbar from '@/components/nav-bar'
 import List from '@/components/list'
-import styles from '../page.module.css'
-
-import { useSearchParams } from 'next/navigation';
 import qs from "qs";
 
 async function getData(props: any) {
     const params = qs.stringify({...props})
-    const res = await fetch(`/api/search?${params}`);
+    const res = await fetch(`http://localhost:3000/api/search?${params}`);
     // The return value is *not* serialized
     // You can return Date, Map, Set, etc.
   
@@ -20,16 +17,17 @@ async function getData(props: any) {
     return res.json();
 }
 
-export default async function Search() {
+export default async function Search({ searchParams }: any) {
   // const searchParams = useSearchParams();
-  // const res = await getData({
-  //   q: searchParams.get('q')
-  // })
+  const res = await getData({
+    ...searchParams
+  })
+
   return (
     <div>
       <Navbar useThemedLogo withSearch/>
       <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6"></div>
-      <List/>
+      <List data={res}/>
     </div>
   )
 }

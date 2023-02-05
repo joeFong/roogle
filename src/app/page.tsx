@@ -16,7 +16,7 @@ export default function Home() {
           <span style={{color: "#F67314"}}>e</span>
         </h1>
       </div>
-      <div className="mt-12 w-1/3 h-24">
+      <div className="mt-12 w-1/2 h-24">
         <form action="/search">   
             <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
             <div className="relative">
