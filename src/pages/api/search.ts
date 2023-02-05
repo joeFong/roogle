@@ -7,7 +7,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const { q } = req.query
+  const { q, offset } = req.query
 
   const cx = '8346f68306dc840e8'
   const key = 'AIzaSyBoNDSafSXJFLqDtUfIVgwepFcxdOORg30'
@@ -15,7 +15,8 @@ export default async function handler(
   const payload = {
     cx, 
     q, 
-    key
+    key,
+    start: offset
   }
 
   const params = qs.stringify(payload)

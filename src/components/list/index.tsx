@@ -6,16 +6,19 @@ export default function List(props: any) {
     return (
         <div className="container mx-auto flex flex-col">
             <p className="font-light text-slate-500">About {searchInformation?.formattedTotalResults} results ({searchInformation?.formattedSearchTime} seconds) </p>
-            
             {
                 items.map((item: any) => {
                     return (
-                        <div className={"my-4"}>
+                        <div key={item.title} className={"my-4"}>
                             <Card data={item}/>
                         </div>
                     )
                 })
             }
+            <div className="flex justify-center mt-10 mb-10">
+                <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Previous</button>
+                <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Next</button>
+            </div>
         </div>
     );
 }
@@ -29,9 +32,15 @@ function Card(props: any) {
                 <div className="flex items-center">
                     <img className="w-10 h-10 rounded" src={cse_thumbnail?.[0].src || ("https://ui-avatars.com/api/?name=" + data.title)} alt={data.title}/>
                     <a href={data.formattedUrl} className="ml-3 text-blue-600 visited:text-purple-600">
-                        <h3 className="text-lg font-medium leading-6" dangerouslySetInnerHTML={{ __html: data.title }}></h3>
+                        <div className="text-slate-500 flex flex-col ml-3 text-sm">
+                            <p>Reddit</p>
+                            <p>{ data.displayLink }</p>
+                        </div>
                     </a>
                 </div>
+                <a href={data.formattedUrl} className="ml-3 text-blue-600 visited:text-purple-600">
+                    <h3 className="text-lg font-medium leading-6" dangerouslySetInnerHTML={{ __html: data.title }}></h3>
+                </a>
                 <p className="mt-1 max-w-2xl text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: data.htmlSnippet }}></p>
             </div>
             {/* <div className="border-t border-gray-200">
