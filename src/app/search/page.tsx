@@ -1,13 +1,14 @@
 import Navbar from '@/components/nav-bar'
+import { headers } from 'next/headers';
 import List from '@/components/list'
 import qs from "qs";
 
 async function getData(props: any) {
+    const headersList = headers();
     const params = qs.stringify({...props})
-    const res = await fetch(`http://localhost:3000/api/search?${params}`);
+    const res = await fetch(`http://${headersList.get('host')}/api/search?${params}`);
     // // The return value is *not* serialized
     // // You can return Date, Map, Set, etc.
-  
     // // Recommendation: handle errors
     if (!res.ok) {
       // This will activate the closest `error.js` Error Boundary
@@ -17,7 +18,8 @@ async function getData(props: any) {
     // return { items: [] }
 }
 
-export default async function Search({ searchParams }: any) {
+export default async function Search({ searchParams, ...rest }: any) {
+  console.log(rest)
   const res = await getData({
     ...searchParams
   })
