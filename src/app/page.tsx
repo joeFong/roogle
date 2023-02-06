@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
     <Navbar/>
-    <main className={styles.main}>
+    <main className={"flex flex-col flex-grow justify-center content-center align-middle items-center h-4/5"}>
       <div>
         <h1 className={'text-7xl'}>
           <span style={{color: "#4285F4"}}>R</span>

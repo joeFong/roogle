@@ -7,10 +7,12 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const { q, offset } = req.query
+  const { q, page } = req.query
 
   const cx = '8346f68306dc840e8'
   const key = 'AIzaSyBoNDSafSXJFLqDtUfIVgwepFcxdOORg30'
+
+  const offset = page ? parseInt((page as any)) * 11 : 0
 
   const payload = {
     cx, 
