@@ -10,7 +10,7 @@ export default async function handler(
   const { q, page } = req.query
 
   const cx = '8346f68306dc840e8'
-  const key = 'AIzaSyBoNDSafSXJFLqDtUfIVgwepFcxdOORg30'
+  const key = process.env.CUSTOMSEARCHKEY
 
   const offset = page ? parseInt((page as any)) * 11 : 0
 

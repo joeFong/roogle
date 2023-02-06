@@ -18,7 +18,7 @@ export default function List(props: any) {
 
     return (
         <div className="container mx-auto flex flex-col">
-            <p className="font-light text-slate-500">About {searchInformation?.formattedTotalResults} results ({searchInformation?.formattedSearchTime} seconds) </p>
+            <p className="px-4 py-5 sm:px-6 font-light text-slate-500">About {searchInformation?.formattedTotalResults} results ({searchInformation?.formattedSearchTime} seconds) </p>
             {
                 items.map((item: any) => {
                     return (
