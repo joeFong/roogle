@@ -19,7 +19,6 @@ async function getData(props: any) {
 }
 
 export default async function Search({ searchParams, ...rest }: any) {
-  console.log(rest)
   const res = await getData({
     ...searchParams
   })
