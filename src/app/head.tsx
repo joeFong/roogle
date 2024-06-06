@@ -9,7 +9,7 @@ export default function Head() {
       <meta name="description" content='Search anything in Reddit without having to tack on "reddit" at the end of every google search'/>
       <meta name="keywords" content="Search Engine, Google, Reddit, Utility"/>
       <meta name="robots" content="index, follow"/>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
       <meta name="language" content="English"/>
 
     </>
