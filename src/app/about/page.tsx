@@ -37,7 +37,7 @@ export default async function AboutUs({ searchParams, ...rest }: any) {
                         </figure>
                     </div>
                     <div className="max-w-xl text-base leading-7 text-gray-700 lg:col-span-7">
-                        <p>Roogle is a web application or tool, that allows you to search for "things" on Google filter your searches only to relavent Reddit posts & sub Reddit. This saves you the stop of going to Google and having to do it yourself because I found myself doing it for almost every query that I wanted to hear some genuine reviews and feedback for. I was searching things like "Best Gluten Free Breads Reddit", "Places to Eat Vancouver Reddit"... and the list goes on.</p>
+                        <p>Roogle is a web application or tool, that allows you to search for &quot;things&quot; on Google filter your searches only to relavent Reddit posts & sub Reddit. This saves you the stop of going to Google and having to do it yourself because I found myself doing it for almost every query that I wanted to hear some genuine reviews and feedback for. I was searching things like &quot;Best Gluten Free Breads Reddit&quot;, &quot;Places to Eat Vancouver Reddit&quot;... and the list goes on.</p>
                         <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
                             <li className="flex gap-x-3">
                                 <svg className="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -49,7 +49,7 @@ export default async function AboutUs({ searchParams, ...rest }: any) {
                                 <svg className="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
                                 </svg>
-                                <span><strong className="font-semibold text-gray-900">Secure.</strong> Roogle does not save any of your searches so you don't need to worry about that.</span>
+                                <span><strong className="font-semibold text-gray-900">Secure.</strong> Roogle does not save any of your searches so you don&apos;t need to worry about that.</span>
                             </li>
                             <li className="flex gap-x-3">
                                 <svg className="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

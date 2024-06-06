@@ -14,7 +14,7 @@ export default async function AboutUs({ searchParams, ...rest }: any) {
                     <p>MIT License</p>
                     
                     <p className="mt-8">Permission is hereby granted, free of charge, to any person obtaining a copy
-                        of this software and associated documentation files (the "Software"), to deal
+                        of this software and associated documentation files (the &quot;Software&quot;), to deal
                         in the Software without restriction, including without limitation the rights
                         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
                         copies of the Software, and to permit persons to whom the Software is
@@ -23,7 +23,7 @@ export default async function AboutUs({ searchParams, ...rest }: any) {
                     <p className="mt-8">The above copyright notice and this permission notice shall be included in all
                         copies or substantial portions of the Software.</p>
 
-                    <p className="mt-8">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                    <p className="mt-8">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
                         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
                         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
                         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
