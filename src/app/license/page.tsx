@@ -9,7 +9,7 @@ export default async function AboutUs({ searchParams, ...rest }: any) {
         <div className="bg-white px-6 py-32 lg:px-8">
             <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">LICENSE</h1>
-                <p className="mt-6 text-xl leading-8">Copyright (c) 2024 Joe Fong</p>
+                <p className="mt-6 text-xl leading-8">Copyright (c) 2023 Joe Fong</p>
                 <div className="mt-10 max-w-2xl">
                     <p>MIT License</p>
                     
