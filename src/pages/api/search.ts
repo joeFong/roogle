@@ -22,7 +22,7 @@ export default async function handler(
   }
 
   const params = qs.stringify(payload)
-  const url = `https://customsearch.googleapis.com/customsearch/v1/siterestrict?${params}`
+  const url = `https://customsearch.googleapis.com/customsearch/v1/?${params}`
   const response = await fetch(url)
   const responseJson = await response.json()
   res.status(200).json(responseJson)
