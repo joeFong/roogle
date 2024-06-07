@@ -12,7 +12,7 @@ export default function Search(props: any) {
     return (
         <Formik
           initialValues={{
-            q: searchParams.get('q')
+            q: searchParams?.get('q')
           }}
           validationSchema={searchSchema}
           onSubmit={(values, { setSubmitting }) => {
