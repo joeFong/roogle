@@ -11,7 +11,7 @@ export default async function AboutUs({ searchParams, ...rest }: any) {
                 <div className="mx-auto max-w-2xl lg:mx-0">
                     <p className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">This is meant to be silly</p>
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A little about Roogle</h1>
-                    <p className="mt-6 text-xl leading-8 text-gray-700">I created Roogle in February 2022 as a silly idea because I was annoyed that I had to tack on "reddit" to every Google query that I made.</p>
+                    <p className="mt-6 text-xl leading-8 text-gray-700">I created Roogle in February 2022 as a silly idea because I was annoyed that I had to tack on &quot;reddit&quot; to every Google query that I made.</p>
                 </div>
                 <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-12">
                     <div className="relative lg:order-last lg:col-span-5">
@@ -25,7 +25,7 @@ export default async function AboutUs({ searchParams, ...rest }: any) {
                         </svg>
                         <figure className="border-l border-indigo-600 pl-8">
                         <blockquote className="text-xl font-semibold leading-8 tracking-tight text-gray-900">
-                            <p>“I couldn't eat or sleep before I found out about Roogle. It has totally revolutionized my life. I have lost over 30 lbs since and my mental health has never been better. Thank you Roogle!”</p>
+                            <p>“I couldn&apos;t eat or sleep before I found out about Roogle. It has totally revolutionized my life. I have lost over 30 lbs since and my mental health has never been better. Thank you Roogle!”</p>
                         </blockquote>
                         <figcaption className="mt-8 flex gap-x-4">
                             <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" className="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50"/>

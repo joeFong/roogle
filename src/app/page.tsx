@@ -1,10 +1,9 @@
 import Navbar from '@/components/nav-bar'
-import Search from '../components/search'
 
-export default function Home() {
+export default function Home(props: any) {
   return (
     <>
-    <Navbar/>
+    <Navbar {...props}/>
     <main className={"flex flex-col flex-grow justify-center content-center align-middle items-center h-4/5"}>
       <div>
         <h1 className={'text-7xl'}>

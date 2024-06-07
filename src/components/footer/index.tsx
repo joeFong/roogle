@@ -17,7 +17,7 @@ export default function Footer(props: any) {
                     </Link>
                 </li>
                 <li>
-                    <a href="https://github.com/joeFong/roogle" className="hover:underline">Contact</a>
+                    <a href="https://github.com/joeFong/roogle" className="hover:underline">GitHub</a>
                 </li>
             </ul>
         </footer>
