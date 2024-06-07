@@ -1,6 +1,6 @@
 import Navbar from '@/components/nav-bar'
 
-export default function Home(props: any) {
+export default async function Home(props: any) {
   return (
     <>
     <Navbar {...props}/>
